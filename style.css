@@ -215,7 +215,6 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 45% 55%);
-    box-shadow: 13px 13px 50px -10px rgba(0, 0, 0, 0.13);
   }
 
   .wreapper .container .card .left {
