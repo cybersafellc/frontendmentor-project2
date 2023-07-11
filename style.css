@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.wreapper {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wreapper .container {
+  width: 650px;
+  height: 450px;
+}
+
+.wreapper .container .card {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 25px;
+  box-shadow: 13px 13px 50px -10px rgba(0, 0, 0, 0.13);
+}
+
+.wreapper .container .card .left {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 25px;
+  box-sizing: border-box;
+  /* gap: 15px; */
+}
+
+.wreapper .container .card .left label {
+  font-size: 20px;
+  color: hsl(241, 100%, 89%);
+}
+
+.wreapper .container .card .left div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.wreapper .container .card .left div .number {
+  font-size: 60px;
+  font-weight: bold;
+  color: hsl(221, 100%, 96%);
+}
+
+.wreapper .container .card .left div .of-100 {
+  color: hsla(222, 100%, 96%, 0.418);
+  font-size: 17px;
+  margin-top: -5px;
+}
+
+.wreapper .container .card .left h1 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+.wreapper .container .card .left p {
+  text-align: center;
+  width: 79%;
+  font-size: 15px;
+  color: hsl(241, 100%, 89%);
+}
+
+.wreapper .container .card .right {
+  border-radius: 25px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 40px 40px;
+  box-sizing: border-box;
+  /* gap: 15px; */
+}
+
+.wreapper .container .card .right label {
+  font-size: 20px;
+}
+
+.wreapper .container .card .right .long-card-list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 13px;
+}
+
+.wreapper .container .card .right .long-card-list div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 6px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.wreapper .container .card .right .long-card-list div .card-left {
+  display: flex;
+  gap: 10px;
+}
+
+.wreapper .container .card .right .long-card-list div div {
+  display: flex;
+  gap: 9px;
+}
+
+.wreapper .container .card .right .long-card-list div div .he723ged:nth-child(2) {
+  color: rgba(0, 0, 0, 0.39);
+}
+.wreapper .container .card .right .long-card-list .card1 .card-left span {
+  font-weight: normal;
+  color: hsl(0, 100%, 67%);
+}
+.wreapper .container .card .right .long-card-list .card1 {
+  background-image: linear-gradient(to right, hsla(0, 100%, 67%, 0.1), hsla(0, 100%, 67%, 0.06));
+}
+
+.card2 .card-left span {
+  font-weight: normal;
+  color: hsl(39, 100%, 56%);
+}
+.wreapper .container .card .right .long-card-list .card2 {
+  background-image: linear-gradient(to right, hsla(39, 100%, 56%, 0.1), hsla(39, 100%, 56%, 0.06));
+}
+
+.card3 .card-left span {
+  font-weight: normal;
+  color: hsl(166, 100%, 37%);
+}
+.wreapper .container .card .right .long-card-list .card3 {
+  background-image: linear-gradient(to right, hsla(166, 100%, 37%, 0.1), hsla(166, 100%, 37%, 0.06));
+}
+
+.card4 .card-left span {
+  font-weight: normal;
+  color: hsl(234, 85%, 45%);
+}
+.wreapper .container .card .right .long-card-list .card4 {
+  background-image: linear-gradient(to right, hsla(234, 85%, 45%, 0.1), hsla(234, 85%, 45%, 0.06));
+}
+
+.wreapper .container .card .right button {
+  width: 100%;
+  padding: 13px;
+  border-radius: 25px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+}
+
+.wreapper .container .card .right button:hover {
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(234, 85%, 45%));
+}
+
+/* Breakpoint */
+
+@media screen and (max-width: 700px) {
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .wreapper {
+    width: 100%;
+    height: 100vh;
+    align-items: start;
+  }
+
+  .wreapper .container {
+    width: 650px;
+    height: 100vh;
+  }
+  .wreapper .container .card {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 55%;
+    border-radius: 25px;
+    box-shadow: 13px 13px 50px -10px rgba(0, 0, 0, 0.13);
+  }
+
+  .wreapper .container .card .left {
+    border-radius: 0px 0px 30px 30px;
+    padding: 30px;
+  }
+
+  .wreapper .container .card .right {
+    height: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .wreapper .container .card .right .long-card-list {
+    gap: 15px;
+  }
+
+  .wreapper .container .card .right .long-card-list div {
+    height: 40px;
+  }
+
+  .wreapper .container .card .right button {
+    padding: 20px;
+    border-radius: 30px;
+  }
+}
